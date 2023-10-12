@@ -162,6 +162,7 @@ const AddOrder = () => {
           </div>
         ))}
       </div>
+      <p>{errors.extra}</p>
       <div className="note">
         <label htmlFor="note">Sipariş Notu</label>
         <input
