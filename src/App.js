@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./layout/Header";
 import Main from "./layout/Main";
+import "./App.css";
 
 const App = () => {
   return (
-    <>
-      <h1>Teknolojik Yemekler</h1>
-      <p>Burdaki kodu silip kendi headerınızı ekleyebilirsiniz</p>
-    </>
+    <div className="App">
+      <Main />
+    </div>
   );
 };
 export default App;

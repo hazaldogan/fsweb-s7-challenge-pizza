@@ -1,0 +1,10 @@
+.order-detail {
+  display: flex;
+  background-image: url("../Seviye-1-MVP/MVP-Success.png");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  height: 180vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}

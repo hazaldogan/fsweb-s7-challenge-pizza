@@ -1,9 +1,11 @@
+import React from "react";
+
 const Header = () => {
   return (
-    <Header>
+    <header>
       <h1>Teknolojik Yemekler</h1>
       <nav></nav>
-    </Header>
+    </header>
   );
 };
 

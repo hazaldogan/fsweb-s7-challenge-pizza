@@ -1,0 +1,142 @@
+.order-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 10vh;
+  padding: 60px 0px 97px 0px;
+  color: white;
+}
+
+header h1 {
+  justify-content: center;
+  align-items: center;
+  font-family: Quattrocento;
+}
+
+header span {
+  font-weight: bold;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-items: self-start;
+  font-family: Barlow;
+}
+
+.product-info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 22em;
+}
+
+.content {
+  display: flex;
+  gap: 5em;
+  font-size: 0.85em;
+  font-weight: 100;
+}
+
+.info-text {
+  text-align: left;
+  font-size: 0.85em;
+  font-weight: 100;
+}
+
+.form-first-area {
+  display: flex;
+  width: 50vw;
+  margin-top: 2em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10em;
+}
+
+.form-first-area span {
+  color: red;
+}
+
+.thickness {
+  text-align: left;
+}
+
+.extra {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 30vh;
+  line-height: 0.2;
+  align-items: baseline;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.sayac {
+  display: flex;
+  gap: 1em;
+  width: 10vw;
+  height: 5vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.decrease,
+.increase {
+  background-color: rgb(236, 203, 12);
+  width: 3vw;
+  height: 5vh;
+  border-radius: 10%;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-area {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 5%;
+  line-height: 0.5;
+  width: 20vw;
+}
+
+.chooses {
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+  font-weight: bold;
+}
+.total {
+  display: flex;
+  justify-content: space-around;
+  color: red;
+  font-weight: bold;
+}
+
+.total-area button {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(236, 203, 12);
+  border-radius: 5%;
+}
+
+#order-button {
+  text-decoration: none;
+}
