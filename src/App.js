@@ -1,12 +1,17 @@
-import React, { useState, useEffect } from "react";
-import Header from "./layout/Header";
+import React, { useState } from "react";
 import Main from "./layout/Main";
 import "./App.css";
 
 const App = () => {
+  const [orders, setOrders] = useState([]);
+
+  function addOrder(order) {
+    setOrders([...orders, order]);
+  }
+
   return (
     <div className="App">
-      <Main />
+      <Main handleAddOrder={addOrder} />
     </div>
   );
 };

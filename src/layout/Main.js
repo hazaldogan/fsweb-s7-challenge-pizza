@@ -5,7 +5,8 @@ import Order from "../page/Order";
 import OrderDetail from "../page/OrderDetail";
 import NotFound from "../page/NotFound";
 
-const Main = () => {
+const Main = (props) => {
+  const { handleAddOrder } = props;
   return (
     <div className="main-container">
       <Switch>
@@ -13,7 +14,7 @@ const Main = () => {
           <Login />
         </Route>
         <Route exact path="/pizza">
-          <Order />
+          <Order handleAddOrder={handleAddOrder} />
         </Route>
         <Route exact path="/siparis-alindi">
           <OrderDetail />

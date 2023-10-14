@@ -2,7 +2,8 @@ import React from "react";
 import AddOrder from "../components/AddOrder";
 import "./Order.css";
 
-const Order = () => {
+const Order = (props) => {
+  const { handleAddOrder } = props;
   return (
     <div className="order-container">
       <header>
@@ -28,7 +29,7 @@ const Order = () => {
           düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli
           lezzetli bir yemektir. . Küçük bir pizzaya bazen pizzetta denir.
         </div>
-        <AddOrder />
+        <AddOrder handleAddOrder={handleAddOrder} />
       </div>
     </div>
   );

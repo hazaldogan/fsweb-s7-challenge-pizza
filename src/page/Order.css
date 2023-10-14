@@ -71,12 +71,15 @@ header span {
 }
 
 .extra {
+  text-align: left;
+  height: 30vh;
+}
+
+.extra-details {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  height: 30vh;
-  line-height: 0.2;
-  align-items: baseline;
+  width: 25vw;
+  column-gap: 2em;
 }
 
 .note {

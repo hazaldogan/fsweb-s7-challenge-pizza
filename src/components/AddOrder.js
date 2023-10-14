@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import * as Yup from "yup";
 import Piece from "./Piece";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 const order = {
   size: "",
@@ -28,7 +29,8 @@ const extraProduct = [
   "Kabak",
 ];
 
-const AddOrder = () => {
+const AddOrder = (props) => {
+  const { handleAddOrder } = props;
   const [formData, setFormData] = useState(order);
   const [isValid, setIsValid] = useState(false);
   const [errors, setErrors] = useState({
@@ -83,6 +85,14 @@ const AddOrder = () => {
   function handleSubmit(event) {
     console.log(formData);
     event.preventDefault();
+    axios
+      .get("https://reqres.in/api/users ", formData)
+      .then((res) => {
+        handleAddOrder(res.data);
+      })
+      .catch((err) => {
+        console.error(err.response.message);
+      });
     //formu sıfırlayacak
     setFormData(order);
     history.push("/siparis-alindi");
@@ -149,18 +159,20 @@ const AddOrder = () => {
       <div className="extra">
         <h4>Ek Malzemeler</h4>
         <p>En fazla 10 malzeme seçebilirsiniz. 5₺</p>
-        {extraProduct.map((evt, i) => (
-          <div className="extra-details" key={i}>
-            <input
-              id={evt}
-              name={evt}
-              type="checkbox"
-              value={evt}
-              onChange={handleChange}
-            />
-            <label htmlFor={evt}>{evt}</label>
-          </div>
-        ))}
+        <div className="extra-details">
+          {extraProduct.map((evt, i) => (
+            <div key={i}>
+              <input
+                id={evt}
+                name={evt}
+                type="checkbox"
+                value={evt}
+                onChange={handleChange}
+              />
+              <label htmlFor={evt}>{evt}</label>
+            </div>
+          ))}
+        </div>
       </div>
       <p>{errors.extra}</p>
       <div className="note">
