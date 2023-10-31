@@ -1,43 +1,68 @@
-.order-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 header {
   background-color: red;
   display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 10vh;
+  width: 1920px;
+  height: 207px;
   padding: 60px 0px 97px 0px;
   color: white;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 header h1 {
-  justify-content: center;
-  align-items: center;
-  font-family: Quattrocento;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: capitalize;
+  font-family: Londrina Solid;
+}
+
+.menu {
+  display: flex;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #faf7f2;
 }
 
 header span {
-  font-weight: bold;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
 }
 
 .product {
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  align-items: self-start;
+  justify-content: center;
+  align-items: center;
+}
+
+.product h4 {
+  display: flex;
+  width: 600px;
+  height: 56px;
+  flex-shrink: 0;
   font-family: Barlow;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  align-items: center;
 }
 
 .product-info {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 22em;
+  display: inline-flex;
+  align-items: center;
+  gap: 260px;
+  width: 600px;
 }
 
 .content {
@@ -49,17 +74,25 @@ header span {
 
 .info-text {
   text-align: left;
-  font-size: 0.85em;
-  font-weight: 100;
+  width: 600px;
+  height: 150px;
+  font-family: Barlow;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .form-first-area {
   display: flex;
-  width: 50vw;
-  margin-top: 2em;
-  justify-content: flex-start;
+  width: 600px;
+  height: 100px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 10em;
 }
 
 .form-first-area span {
@@ -67,25 +100,40 @@ header span {
 }
 
 .thickness {
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
 }
 
 .extra {
-  text-align: left;
-  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.extra p {
+  text-align: start;
+  margin: 0;
 }
 
 .extra-details {
   display: flex;
+  margin-top: 20px;
+  width: 600px;
   flex-wrap: wrap;
-  width: 25vw;
-  column-gap: 2em;
+}
+
+.extra-details div {
+  text-align: left;
+  width: 200px;
 }
 
 .note {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  margin: 50px 0 30px 0;
+  font-weight: 700;
+  font-family: Barlow;
 }
 
 .sayac {
@@ -109,6 +157,7 @@ header span {
 .end {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .total-area {
@@ -118,6 +167,10 @@ header span {
   border-radius: 5%;
   line-height: 0.5;
   width: 20vw;
+}
+
+.total-area h4 {
+  margin-left: 50px;
 }
 
 .chooses {

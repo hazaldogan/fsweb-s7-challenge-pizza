@@ -5,10 +5,10 @@ import "./Order.css";
 const Order = (props) => {
   const { handleAddOrder } = props;
   return (
-    <div className="order-container">
+    <div>
       <header>
         <h1>Teknolojik Yemekler</h1>
-        <div>
+        <div className="menu">
           Anasayfa - Seçenekler -<span>Sipariş Oluştur</span>
         </div>
       </header>

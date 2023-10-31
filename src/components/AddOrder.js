@@ -102,7 +102,9 @@ const AddOrder = (props) => {
     <form action="siparis-alindi" id="pizza-form" onSubmit={handleSubmit}>
       <div className="form-first-area">
         <div className="size">
-          Boyut Seç<span>*</span>
+          <p>
+            Boyut Seç<span>*</span>
+          </p>
           <div>
             <input
               id="small"
@@ -139,7 +141,9 @@ const AddOrder = (props) => {
         </div>
         <div className="thickness">
           <label htmlFor="thickness">
-            Hamur Seç<span>*</span>
+            <p>
+              Hamur Seç<span>*</span>
+            </p>
           </label>
           <br />
           <select onChange={handleChange} name="thickness" id="thickness">
